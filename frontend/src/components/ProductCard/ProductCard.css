@@ -1,0 +1,143 @@
+.product-card{
+    width:100%;
+    max-width:300px;
+    margin:auto;
+
+    background:#111827;
+    border:1px solid #263245;
+    border-radius:16px;
+    overflow:hidden;
+
+    display:flex;
+    flex-direction:column;
+
+    transition:.3s;
+}
+
+.product-card:hover{
+    transform:translateY(-6px);
+    border-color:#3b82f6;
+    box-shadow:0 15px 30px rgba(37,99,235,.18);
+}
+
+/* IMAGE */
+
+.product-image {
+    width: 100%;
+    height: 180px;
+    padding: 10px;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #0f172a;
+    overflow: hidden;
+}
+
+.product-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.product-card:hover .product-image img{
+    transform:scale(1.04);
+}
+
+/* CONTENT */
+
+.product-content{
+    padding:16px;
+}
+
+/* TITLE */
+
+.product-title{
+    color:#fff;
+    font-size:20px;
+    line-height:1.25;
+    font-weight:700;
+
+    height:50px;
+
+    margin-bottom:8px;
+
+    overflow:hidden;
+
+    display:-webkit-box;
+    -webkit-box-orient:vertical;
+}
+
+/* DESCRIPTION */
+
+.product-description{
+    color:#94a3b8;
+    font-size:13px;
+    line-height:1.5;
+
+    height:40px;
+
+    margin-bottom:10px;
+
+    overflow:hidden;
+
+    display:-webkit-box;
+    -webkit-box-orient:vertical;
+}
+
+/* PRICE */
+
+.product-price{
+    color:#60a5fa;
+    font-size:23px;
+    margin:10px 0 14px;
+}
+
+/* BUTTON */
+
+.product-buttons{
+    display:flex;
+    gap:8px;
+    flex-wrap:wrap;
+}
+
+.product-buttons button{
+    padding:9px 12px;
+    border:none;
+    border-radius:8px;
+
+    font-size:13px;
+    font-weight:600;
+
+    cursor:pointer;
+    transition:.25s;
+}
+
+.view-btn{
+    background:#2563eb;
+    color:white;
+}
+
+.edit-btn{
+    background:#f59e0b;
+    color:white;
+}
+
+.delete-btn{
+    background:#dc2626;
+    color:white;
+}
+
+.product-buttons button:hover{
+    transform:translateY(-2px);
+}
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(300px,1fr));
+    gap:25px;
+    align-items:start;
+}

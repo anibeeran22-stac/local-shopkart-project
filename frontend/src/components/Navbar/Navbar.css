@@ -1,0 +1,164 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.navbar{
+
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:18px 8%;
+
+    background:#ffffff;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+}
+
+.logo a{
+
+    text-decoration:none;
+
+    font-size:30px;
+
+    font-weight:700;
+
+    color:#2563eb;
+
+}
+
+.nav-links{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:35px;
+
+}
+
+.nav-links a{
+
+    text-decoration:none;
+
+    color:#222;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.nav-links a:hover{
+
+    color:#2563eb;
+
+}
+
+.nav-links .active{
+
+    color:#2563eb;
+
+}
+
+.nav-right{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+.login-btn,
+.register-btn,
+.admin-btn,
+.logout-btn{
+
+    text-decoration:none;
+
+    border:none;
+
+    padding:10px 20px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.login-btn{
+
+    background:#2563eb;
+
+    color:white;
+
+}
+
+.register-btn{
+
+    background:#111827;
+
+    color:white;
+
+}
+
+.admin-btn{
+
+    background:#16a34a;
+
+    color:white;
+
+}
+
+.logout-btn{
+
+    background:#dc2626;
+
+    color:white;
+
+}
+
+.login-btn:hover{
+
+    background:#1d4ed8;
+
+}
+
+.register-btn:hover{
+
+    background:#000;
+
+}
+
+.admin-btn:hover{
+
+    background:#15803d;
+
+}
+
+.logout-btn:hover{
+
+    background:#b91c1c;
+
+}
+
+.welcome{
+
+    font-weight:600;
+
+    color:#2563eb;
+
+}

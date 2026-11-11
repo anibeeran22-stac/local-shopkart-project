@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:#030712;
+    color:white;
+}
+
+/* =========================
+   CATEGORY PAGE
+========================= */
+
+.category-page{
+    width:90%;
+    max-width:1250px;
+    margin:50px auto;
+    min-height:80vh;
+}
+
+/* =========================
+   TITLE
+========================= */
+
+.category-page h1{
+    text-align:center;
+    font-size:42px;
+    font-weight:800;
+    letter-spacing:-.8px;
+    color:#ffffff;
+    margin-bottom:10px;
+}
+
+.category-subtitle{
+    text-align:center;
+    color:#94a3b8;
+    font-size:16px;
+    margin-bottom:45px;
+}
+
+/* =========================
+   GRID
+========================= */
+
+.category-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+/* =========================
+   CATEGORY CARD
+========================= */
+
+.category-card{
+    position:relative;
+
+    background:rgba(17,24,39,.78);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:20px;
+
+    padding:28px;
+
+    min-height:190px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+    overflow:hidden;
+
+    cursor:pointer;
+
+    transition:
+        transform .35s ease,
+        border-color .35s ease,
+        box-shadow .35s ease,
+        background .35s ease;
+}
+
+.category-card::before{
+    content:"";
+
+    position:absolute;
+
+    width:180px;
+    height:180px;
+
+    top:-90px;
+    right:-80px;
+
+    border-radius:50%;
+
+    background:linear-gradient(
+        135deg,
+        #2563eb,
+        #8b5cf6
+    );
+
+    opacity:.10;
+
+    transition:.4s;
+}
+
+.category-card:hover{
+    transform:translateY(-8px);
+
+    border-color:#3b82f6;
+
+    background:#111827;
+
+    box-shadow:
+        0 20px 45px rgba(37,99,235,.18);
+}
+
+.category-card:hover::before{
+    transform:scale(1.5);
+
+    opacity:.20;
+}
+
+/* =========================
+   ACTIVE CATEGORY
+========================= */
+
+.category-card.active{
+    border-color:#2563eb;
+
+    box-shadow:
+        0 0 0 1px rgba(37,99,235,.2),
+        0 15px 35px rgba(37,99,235,.15);
+}
+
+/* =========================
+   NAME
+========================= */
+
+.category-card h3{
+    position:relative;
+    z-index:2;
+
+    color:#ffffff;
+
+    font-size:23px;
+    font-weight:700;
+
+    margin-bottom:10px;
+}
+
+/* =========================
+   DESCRIPTION
+========================= */
+
+.category-card p{
+    position:relative;
+    z-index:2;
+
+    color:#94a3b8;
+
+    font-size:14px;
+
+    line-height:1.7;
+
+    min-height:48px;
+
+    margin-bottom:18px;
+}
+
+/* =========================
+   STATUS
+========================= */
+
+.category-card span{
+    position:relative;
+    z-index:2;
+
+    display:inline-block;
+
+    width:max-content;
+
+    padding:6px 12px;
+
+    border-radius:20px;
+
+    background:rgba(37,99,235,.12);
+
+    border:1px solid rgba(59,130,246,.25);
+
+    color:#60a5fa;
+
+    font-size:12px;
+
+    font-weight:600;
+}
+
+/* =========================
+   LOADING
+========================= */
+
+.category-loading{
+    min-height:70vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    color:#60a5fa;
+
+    font-size:24px;
+    font-weight:700;
+}
+
+/* =========================
+   EMPTY STATE
+========================= */
+
+.no-categories{
+    grid-column:1 / -1;
+
+    text-align:center;
+
+    padding:60px 20px;
+
+    color:#94a3b8;
+
+    font-size:18px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:992px){
+
+    .category-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .category-page h1{
+        font-size:36px;
+    }
+
+}
+
+@media(max-width:650px){
+
+    .category-page{
+        width:92%;
+        margin:35px auto;
+    }
+
+    .category-grid{
+        grid-template-columns:1fr;
+    }
+
+    .category-page h1{
+        font-size:30px;
+    }
+
+    .category-subtitle{
+        font-size:14px;
+        margin-bottom:30px;
+    }
+
+    .category-card{
+        min-height:170px;
+        padding:22px;
+    }
+
+}

@@ -1,0 +1,10 @@
+.metadata/
+**/.metadata/
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+target/
+**/target/
+.env
+.env.*

@@ -1,0 +1,88 @@
+.admin-container{
+    width:95%;
+    max-width:1300px;
+    margin:40px auto;
+    color:white;
+}
+
+.admin-container h1{
+    text-align:center;
+    font-size:42px;
+    color:white;
+}
+
+.admin-container p{
+    text-align:center;
+    color:#94a3b8;
+    margin-bottom:40px;
+}
+
+.admin-cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+
+.admin-card{
+    background:#111827;
+    border:1px solid #1e293b;
+    border-radius:18px;
+    padding:35px;
+    text-decoration:none;
+    color:white;
+    transition:.35s;
+}
+
+.admin-card:hover{
+    transform:translateY(-10px);
+    border-color:#2563eb;
+    box-shadow:0 15px 40px rgba(37,99,235,.25);
+}
+
+.admin-card h2{
+    font-size:30px;
+    margin-bottom:15px;
+}
+
+.admin-card p{
+    text-align:left;
+    color:#cbd5e1;
+}
+
+.order-card{
+    position:relative;
+}
+
+.order-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:10px;
+}
+
+.order-badge{
+
+    min-width:32px;
+    height:32px;
+
+    border-radius:50%;
+
+    background:#EF4444;
+    color:#fff;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:14px;
+    font-weight:bold;
+}
+
+.order-card small{
+
+    display:block;
+    margin-top:12px;
+
+    color:#94A3B8;
+    font-size:13px;
+}

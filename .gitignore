@@ -8,3 +8,9 @@ target/
 **/target/
 .env
 .env.*
+backend/.settings/
+backend/.classpath
+backend/.project
+backend/.factorypath
+backend/Uploads/
+backend/src/main/resources/application-local.properties
